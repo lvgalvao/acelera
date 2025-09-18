@@ -1,6 +1,27 @@
 # 🚀 Acelera - Plataforma de Trilhas de Dados
 
-Uma aplicação Streamlit que oferece trilhas de aprendizado personalizadas na área de dados, com questionário inteligente para recomendar o melhor caminho de estudos.
+<div align="center">
+  <img src="img/acelerador.jpg" alt="Acelerador - Jornada de Dados" width="600">
+</div>
+
+Uma aplicação Streamlit que faz parte da **Jornada de Dados** e oferece trilhas de aprendizado personalizadas na área de dados, com questionário inteligente para recomendar o melhor caminho de estudos.
+
+## 🗺️ Roadmap
+
+Este repositório faz parte da **Jornada de Dados** e tem como objetivo criar um **roadmap de estudo para os próximos 90 dias**, ajudando profissionais a acelerar sua carreira na área de dados através de trilhas personalizadas e um plano de estudos estruturado.
+
+### 🎯 **Seus melhores 90 dias**
+
+**Roadmap adaptado ao seu objetivo profissional:**
+- 👨‍💼 **Profissional migrando para a área**
+- 📊 **Analista migrando para engenharia**
+- 🚀 **Engenheiro se especializando**
+
+**📅 Cronograma do Programa:**
+- **12 semanas** de desafios práticos
+- **4 Encontros** focados em estratégia de carreira, posicionamento e aumento de renda
+- **Início:** 18 de setembro
+- **Fim:** 11 de dezembro
 
 ## 📋 Funcionalidades
 
@@ -9,6 +30,14 @@ Uma aplicação Streamlit que oferece trilhas de aprendizado personalizadas na �
 - **Recomendação automática** de 3 trilhas baseada nas suas respostas
 - **Plano de estudos de 3 meses** (1 trilha por mês)
 - **Cálculo baseado em 2 horas de estudo por dia**
+
+### 🗓️ Roadmap de 90 Dias (12 Semanas)
+- **Estrutura de 3 meses** com foco em resultados práticos
+- **1 trilha por mês** para aprofundamento adequado
+- **12 semanas de desafios práticos** para aplicação imediata
+- **4 encontros estratégicos** para carreira e posicionamento
+- **Cronograma realista** considerando 2 horas diárias de estudo
+- **Progressão lógica** das competências em dados
 
 ### 📚 Trilhas Disponíveis
 - **n8n** - Automação de processos
@@ -22,6 +51,12 @@ Uma aplicação Streamlit que oferece trilhas de aprendizado personalizadas na �
 - **Lista completa de módulos** com carga horária
 - **Métricas de estudo** (horas totais, dias necessários)
 - **Download do plano** em formato CSV
+
+### 🎯 Encontros Estratégicos
+- **4 encontros focados** em estratégia de carreira
+- **Posicionamento profissional** no mercado de dados
+- **Estratégias de aumento de renda** na área
+- **Networking** com outros profissionais
 
 ## 🛠️ Instalação
 
@@ -145,3 +180,5 @@ Para dúvidas ou suporte, entre em contato através dos issues do repositório.
 ---
 
 **Desenvolvido com ❤️ para acelerar sua jornada em dados!**
+
+*Este projeto faz parte da **Jornada de Dados** - uma iniciativa para democratizar o conhecimento em dados e acelerar a carreira de profissionais na área.*
