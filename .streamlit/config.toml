@@ -1,0 +1,18 @@
+[theme]
+# Base do tema: light ou dark
+base = "light"
+
+# Cor principal (botões, destaque)
+primaryColor = "#1f77b4"
+
+# Cor de fundo principal
+backgroundColor = "#ffffff"
+
+# Cor de fundo secundário (sidebar, caixas)
+secondaryBackgroundColor = "#f0f2f6"
+
+# Cor do texto
+textColor = "#262730"
+
+# Fonte (sans serif, serif ou monospace)
+font = "sans serif"
