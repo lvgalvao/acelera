@@ -9,7 +9,7 @@
 **Simples assim:** Responda 7 perguntas e receba automaticamente seu **roadmap de estudo para os próximos 90 dias**, personalizado para seu objetivo profissional.
 
 ### 🌐 **Acesse diretamente:**
-**[https://lvgalvao-acelera-main-tplci3.streamlit.app/](https://lvgalvao-acelera-main-tplci3.streamlit.app/)**
+**[https://roadmap-jornadadedados.streamlit.app//](https://lvgalvao-acelera-main-tplci3.streamlit.app/)**
 
 ### 🚀 **O que você vai receber:**
 - ✅ **3 trilhas recomendadas** baseadas no seu perfil
