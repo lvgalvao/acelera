@@ -42,7 +42,7 @@
 
 1. **Clone e instale:**
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/lvgalvao/acelera.git
 cd acelera
 pip install -r requirements.txt
 ```
