@@ -1,18 +1,24 @@
 [theme]
-# Base do tema: light ou dark
-base = "light"
+primaryColor = "#cb785c"
+backgroundColor = "#fdfdf8"
+secondaryBackgroundColor = "#ecebe3"
+textColor = "#3d3a2a"
+linkColor = "#3d3a2a"
+borderColor = "#d3d2ca"
+showWidgetBorder = true
+baseRadius = "0.75rem"
+buttonRadius = "full"
+font = "sans serif"         # antes: "SpaceGrotesk"
+headingFontWeights = [600,500,500,500,500,500]
+headingFontSizes = ["3rem", "2rem"]
+codeFont = "monospace"      # antes: "SpaceMono"
+codeFontSize = ".75rem"
+codeBackgroundColor = "#ecebe4"
+showSidebarBorder = true
+chartCategoricalColors = ["#0ea5e9", "#059669", "#fbbf24"]
 
-# Cor principal (botões, destaque)
-primaryColor = "#1f77b4"
-
-# Cor de fundo principal
-backgroundColor = "#ffffff"
-
-# Cor de fundo secundário (sidebar, caixas)
-secondaryBackgroundColor = "#f0f2f6"
-
-# Cor do texto
-textColor = "#262730"
-
-# Fonte (sans serif, serif ou monospace)
-font = "sans serif"
+[theme.sidebar]
+backgroundColor = "#f0f0ec"
+secondaryBackgroundColor = "#ecebe3"
+headingFontSizes = ["1.6rem", "1.4rem", "1.2rem"]
+dataframeHeaderBackgroundColor = "#e4e4e0"
