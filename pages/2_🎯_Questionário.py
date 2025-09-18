@@ -8,6 +8,65 @@ st.set_page_config(
     layout="wide"
 )
 
+# Forçar tema light
+st.markdown("""
+<style>
+    .stApp {
+        color-scheme: light;
+    }
+    .stApp > header {
+        background-color: transparent;
+    }
+    .stApp > div {
+        background-color: #ffffff;
+    }
+    /* Força o tema light em todos os componentes */
+    .stSelectbox > div > div {
+        background-color: #ffffff;
+        color: #262730;
+    }
+    .stTextInput > div > div > input {
+        background-color: #ffffff;
+        color: #262730;
+    }
+    .stTextArea > div > div > textarea {
+        background-color: #ffffff;
+        color: #262730;
+    }
+    .stButton > button {
+        background-color: #ffffff;
+        color: #262730;
+        border: 1px solid #cccccc;
+    }
+    .stButton > button:hover {
+        background-color: #f0f2f6;
+        border-color: #1f77b4;
+    }
+    .stDataFrame {
+        background-color: #ffffff;
+    }
+    .stExpander {
+        background-color: #ffffff;
+        border: 1px solid #cccccc;
+    }
+    .stMetric {
+        background-color: #ffffff;
+    }
+    .stInfo {
+        background-color: #e6f3ff;
+        border: 1px solid #1f77b4;
+    }
+    .stSuccess {
+        background-color: #e6ffe6;
+        border: 1px solid #28a745;
+    }
+    .stWarning {
+        background-color: #fff3cd;
+        border: 1px solid #ffc107;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # Título principal
 st.title("🎯 Questionário de Orientação")
 st.markdown("**Descubra qual trilha é ideal para você!**")

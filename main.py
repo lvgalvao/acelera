@@ -4,8 +4,46 @@ import streamlit as st
 st.set_page_config(
     page_title="Jornada de Dados",
     page_icon="🚀",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
+
+# Forçar tema light
+st.markdown("""
+<style>
+    .stApp {
+        color-scheme: light;
+    }
+    .stApp > header {
+        background-color: transparent;
+    }
+    .stApp > div {
+        background-color: #ffffff;
+    }
+    /* Força o tema light em todos os componentes */
+    .stSelectbox > div > div {
+        background-color: #ffffff;
+        color: #262730;
+    }
+    .stTextInput > div > div > input {
+        background-color: #ffffff;
+        color: #262730;
+    }
+    .stTextArea > div > div > textarea {
+        background-color: #ffffff;
+        color: #262730;
+    }
+    .stButton > button {
+        background-color: #ffffff;
+        color: #262730;
+        border: 1px solid #cccccc;
+    }
+    .stButton > button:hover {
+        background-color: #f0f2f6;
+        border-color: #1f77b4;
+    }
+</style>
+""", unsafe_allow_html=True)
 
 
 # Título principal
