@@ -9,8 +9,8 @@ st.set_page_config(
 
 
 # Título principal
-st.title("🚀 Jornada de Dados")
-st.markdown("**Seja fluente em Dados, Python, SQL e Cloud em um só lugar**")
+st.title("Jornada de Dados")
+st.markdown("**Acelera - Seus melhores 90 dias**")
 
 
 st.markdown("---")
