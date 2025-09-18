@@ -351,7 +351,7 @@ def main():
                         # Mostrar tabela dos módulos
                         st.dataframe(
                             modulos_trilha[['Módulo', 'Carga Horária (h)', 'Dias Necessários', 'Objetivo']],
-                            use_container_width=True,
+                            width='stretch',
                             height=300
                         )
                         

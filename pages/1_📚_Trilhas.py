@@ -120,7 +120,7 @@ if df_trilhas is not None and df_cursos is not None:
             
             st.dataframe(
                 tabela_modulos,
-                use_container_width=True,
+                width='stretch',
                 height=400
             )
             
