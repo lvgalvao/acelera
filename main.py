@@ -35,25 +35,28 @@ with col1:
     </div>
     """, unsafe_allow_html=True)
     
-    if st.button("📚 Ver Trilhas", type="primary", width='stretch'):
+    if st.button("📚 Ver Trilhas", type="secondary", width='stretch'):
         st.switch_page("pages/1_📚_Trilhas.py")
 
 with col2:
     st.markdown("""
     <div style="
-        background-color: #f0f2f6;
-        padding: 30px;
-        border-radius: 10px;
-        border-left: 5px solid #ff6b6b;
+        background: linear-gradient(135deg, #fff5f5 0%, #ffe6e6 100%);
+        padding: 35px;
+        border-radius: 15px;
+        border: 3px solid #ff6b6b;
         text-align: center;
         margin: 10px 0;
+        box-shadow: 0 8px 25px rgba(255, 107, 107, 0.2);
+        transform: scale(1.02);
     ">
-        <h3 style="color: #ff6b6b; margin-top: 0;">🎯 Questionário</h3>
-        <p>Descubra qual trilha é ideal para você baseado no seu perfil.</p>
+        <h3 style="color: #ff6b6b; margin-top: 0; font-size: 1.6rem; font-weight: bold;">🎯 Questionário</h3>
+        <p style="font-size: 1.1rem; font-weight: 500;">Descubra qual trilha é ideal para você baseado no seu perfil.</p>
+        <p style="color: #ff6b6b; font-weight: bold; margin-top: 10px;">✨ Recomendado para iniciantes</p>
     </div>
     """, unsafe_allow_html=True)
     
-    if st.button("🎯 Fazer Questionário", type="secondary", width='stretch'):
+    if st.button("🎯 Fazer Questionário", type="primary", width='stretch'):
         st.switch_page("pages/2_🎯_Questionário.py")
 
 st.markdown("---")

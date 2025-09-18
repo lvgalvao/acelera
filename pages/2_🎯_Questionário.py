@@ -337,18 +337,45 @@ def main():
                 type="primary"
             )
             
-            # Mostrar tabela do plano de estudos
+            # Mostrar detalhamento do plano de estudos
             st.markdown("---")
             st.markdown("### 📋 Detalhamento do Plano de Estudos")
             
-            # Agrupar por trilha para melhor visualização
-            for trilha_id in trilhas_recomendadas:
+            # Mostrar cada trilha recomendada com descrição e tabela juntos
+            for i, trilha_id in enumerate(trilhas_recomendadas, 1):
                 trilha_nome = TRILHAS_MAP[trilha_id]
                 modulos_trilha = plano_estudos[plano_estudos['Trilha'] == trilha_nome]
                 
+                # Buscar descrição da trilha
+                descricao = df_trilhas[df_trilhas['trilha'] == trilha_nome]['detalhe'].iloc[0]
+                
                 if not modulos_trilha.empty:
-                    with st.expander(f"📚 {trilha_nome} (1 mês)", expanded=False):
-                        # Mostrar tabela dos módulos
+                    with st.expander(f"📚 {i}. {trilha_nome} (1 mês)", expanded=True):
+                        # Descrição da trilha
+                        st.markdown(f"**Descrição:** {descricao}")
+                        
+                        # Adicionar informações específicas baseadas no nível
+                        respostas = st.session_state.respostas
+                        
+                        if trilha_id == "python" and respostas["python_level"] in ["avancado", "intermediario"]:
+                            st.info("💡 **Dica:** Com seu nível em Python, você pode focar nos módulos mais avançados da trilha!")
+                        
+                        if trilha_id == "aws" and respostas["cloud_exp"] in ["avancado", "intermediario"]:
+                            st.info("💡 **Dica:** Com sua experiência em nuvem, você pode pular os módulos básicos e focar nos avançados!")
+                        
+                        if trilha_id == "engenharia_de_dados" and respostas["goal"] == "engenheiro_para_senior":
+                            st.info("💡 **Dica:** Esta trilha é perfeita para sua evolução para sênior! Foque em streaming, Terraform, K8s e observabilidade.")
+                        
+                        if trilha_id == "sql" and respostas["sql_level"] in ["avancado", "intermediario"]:
+                            st.info("💡 **Dica:** Com seu conhecimento em SQL, foque nos módulos de dbt e otimização avançada!")
+                        
+                        if trilha_id == "n8n" and respostas["automation_exp"] in ["avancado", "intermediario"]:
+                            st.info("💡 **Dica:** Com sua experiência em automação, foque nos projetos avançados e integrações complexas!")
+                        
+                        st.markdown("---")
+                        
+                        # Tabela dos módulos
+                        st.markdown("**📚 Módulos da Trilha:**")
                         st.dataframe(
                             modulos_trilha[['Módulo', 'Carga Horária (h)', 'Dias Necessários', 'Objetivo']],
                             width='stretch',
@@ -363,34 +390,6 @@ def main():
                             st.metric("Horas", f"{modulos_trilha['Carga Horária (h)'].sum():.1f}h")
                         with col3:
                             st.metric("Dias", modulos_trilha['Dias Necessários'].sum())
-            
-            # Mostrar cada trilha recomendada
-            for i, trilha_id in enumerate(trilhas_recomendadas, 1):
-                trilha_nome = TRILHAS_MAP[trilha_id]
-                
-                # Buscar descrição da trilha
-                descricao = df_trilhas[df_trilhas['trilha'] == trilha_nome]['detalhe'].iloc[0]
-                
-                with st.expander(f"📚 {i}. {trilha_nome}", expanded=True):
-                    st.markdown(f"**Descrição:** {descricao}")
-                    
-                    # Adicionar informações específicas baseadas no nível
-                    respostas = st.session_state.respostas
-                    
-                    if trilha_id == "python" and respostas["python_level"] in ["avancado", "intermediario"]:
-                        st.info("💡 **Dica:** Com seu nível em Python, você pode focar nos módulos mais avançados da trilha!")
-                    
-                    if trilha_id == "aws" and respostas["cloud_exp"] in ["avancado", "intermediario"]:
-                        st.info("💡 **Dica:** Com sua experiência em nuvem, você pode pular os módulos básicos e focar nos avançados!")
-                    
-                    if trilha_id == "engenharia_de_dados" and respostas["goal"] == "engenheiro_para_senior":
-                        st.info("💡 **Dica:** Esta trilha é perfeita para sua evolução para sênior! Foque em streaming, Terraform, K8s e observabilidade.")
-                    
-                    if trilha_id == "sql" and respostas["sql_level"] in ["avancado", "intermediario"]:
-                        st.info("💡 **Dica:** Com seu conhecimento em SQL, foque nos módulos de dbt e otimização avançada!")
-                    
-                    if trilha_id == "n8n" and respostas["automation_exp"] in ["avancado", "intermediario"]:
-                        st.info("💡 **Dica:** Com sua experiência em automação, foque nos projetos avançados e integrações complexas!")
         else:
             st.warning("Não foi possível determinar uma trilha específica. Considere entrar em contato para uma orientação personalizada.")
         

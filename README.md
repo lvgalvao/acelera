@@ -8,6 +8,9 @@
 
 **Simples assim:** Responda 7 perguntas e receba automaticamente seu **roadmap de estudo para os próximos 90 dias**, personalizado para seu objetivo profissional.
 
+### 🌐 **Acesse diretamente:**
+**[https://lvgalvao-acelera-main-tplci3.streamlit.app/](https://lvgalvao-acelera-main-tplci3.streamlit.app/)**
+
 ### 🚀 **O que você vai receber:**
 - ✅ **3 trilhas recomendadas** baseadas no seu perfil
 - ✅ **Plano de estudos de 3 meses** (1 trilha por mês)
@@ -38,7 +41,12 @@
 - 📊 **Analista migrando para engenharia**
 - 🚀 **Engenheiro se especializando**
 
-## 🛠️ **Como executar:**
+## 🛠️ **Como usar:**
+
+### 🌐 **Opção 1 - Acesse diretamente (Recomendado):**
+**[https://lvgalvao-acelera-main-tplci3.streamlit.app/](https://lvgalvao-acelera-main-tplci3.streamlit.app/)**
+
+### 💻 **Opção 2 - Execute localmente:**
 
 1. **Clone e instale:**
 ```bash
