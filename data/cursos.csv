@@ -1,0 +1,85 @@
+Trilha;Conteúdo;Carga Horária;Objetivo
+Comece por aqui;Boas-vindas!;30;Entender a dinâmica da Jornada e como aproveitar melhor os recursos da plataforma
+Comece por aqui;Linkedin Profissional;60;Estruturar seu perfil profissional para atrair oportunidades e construir autoridade na área de dados
+Trilha de I.A. com n8n;Introdução ao n8n, workflows e agentes de IA;30;Conhecer os conceitos básicos de automação, fluxos e uso de IA no n8n
+Trilha de I.A. com n8n;Configuração do n8n cloud e deploy;30;Aprender a configurar o ambiente e publicar seus primeiros workflows na nuvem
+Trilha de I.A. com n8n;Integração com Google: Gmail, Calendar e Sheets;60;Automatizar tarefas do dia a dia integrando o n8n com serviços Google
+Trilha de I.A. com n8n;Inteligência Artificial no n8n com ChatGPT;60;Criar agentes inteligentes dentro do n8n para responder perguntas e executar tarefas
+Trilha de I.A. com n8n;Integração com banco de dados (Postgres);60;Conectar o n8n a um banco relacional e executar queries automatizadas
+Trilha de I.A. com n8n;Automação com Whatsapp e Infra self-hosted;60;Configurar automações no WhatsApp e entender como rodar o n8n em servidores próprios
+Trilha de I.A. com n8n;Agente de e-mail;60;Construir um agente que lê, interpreta e responde e-mails automaticamente
+Trilha de I.A. com n8n;Agente financeiro com banco de dados;60;Criar um sistema de controle financeiro com automações ligadas a banco de dados
+Trilha de I.A. com n8n;Agente analista que cria relatórios;60;Gerar relatórios automatizados a partir de dados coletados
+Trilha de I.A. com n8n;Agente para ler seus documentos RA;120;Usar IA para interpretar e responder perguntas sobre documentos
+Trilha de I.A. com n8n;Agente que faz Web Scraping;120;Coletar informações da web e transformá-las em dados utilizáveis
+Trilha de I.A. com n8n;Agente nutricionista com fotos;120;Processar imagens de refeições e estimar calorias usando IA
+Trilha de I.A. com n8n;Crie uma equipe de Marketing;120;Montar fluxos que automatizam tarefas de marketing digital (posts, e-mails, leads)
+Trilha de I.A. com n8n;Agente suporte (clínica) no Whatsapp com voz natural;120;Criar um chatbot com voz natural para atendimento no WhatsApp
+Trilha de I.A. com n8n;Case real para vender clínicas médicas;180;Implementar um projeto completo de automação voltado a um caso real de mercado
+Trilha de Python;Python, Git e VScode: Python do Zero;120;Instalar ambiente e aprender a programar em Python desde o básico
+Trilha de Python;TypeError, Type Check, Type Conversion, try-except e if;120;Tratar erros e entender como o Python lida com tipos de dados
+Trilha de Python;Controle de Fluxo: DEBUG, IF, FOR, While, Listas e Dicionários;120;Dominar as estruturas básicas de controle e coleções
+Trilha de Python;Tipos complexos e Type Hint (Dicionários vs DataFrames Vs Tabelas Vs Excel);120;Diferenciar estruturas de dados e aplicar tipagem para organizar código
+Trilha de Python;Projeto 01: Leitura e Escrita de Arquivos, lendo 1 bilhão de linhas;120;Trabalhar com grandes volumes de dados em Python
+Trilha de Python;Exercício de revisão;120;Consolidar fundamentos de Python com prática aplicada
+Trilha de Python;Funções em Python e Estrutura de Dados - Parte 1;120;Aprender a criar funções reutilizáveis e manipular dados de forma eficiente
+Trilha de Python;Funções em Python e Estrutura de Dados - Parte 2;120;Aprender a criar funções reutilizáveis e manipular dados de forma eficiente
+Trilha de Python;Funções em Python e Estrutura de Dados - Parte 3;120;Aprender a criar funções reutilizáveis e manipular dados de forma eficiente
+Trilha de Python;Aula de revisão;120;Reforçar conceitos e resolver dúvidas de funções e estruturas
+Trilha de Python;Introdução a POO;120;Compreender os conceitos iniciais da Programação Orientada a Objetos
+Trilha de Python;Introdução às Classes em Python - Parte 01;120;Implementar classes, métodos e herança em Python
+Trilha de Python;Introdução às Classes em Python - Parte 02;120;Implementar classes, métodos e herança em Python
+Trilha de Python;Introdução às Classes em Python - Parte 03;120;Implementar classes, métodos e herança em Python
+Trilha de Python;Introdução às Classes em Python - Parte 04;120;Implementar classes, métodos e herança em Python
+Trilha de Python;Aula de revisão de programação orientada a objetos + SQLModel;120;Revisar POO aplicando em bancos de dados com SQLModel
+Trilha de Python;SQLAlchemy - Conjunto de ferramentas para manipular SQL em Python;120;Usar ORM para manipular SQL diretamente no Python
+Trilha de Python;O que é uma API? Request, Pydantic e fazendo nosso CRUD;120;Criar APIs do zero e integrar com banco de dados
+Trilha de Python;O que é uma API? Criando nossa primeira API;120;Criar APIs do zero e integrar com banco de dados
+Trilha de Python;Nosso Projeto de CRUD Backend + Frontend + Banco de Dados;120;Entregar um projeto completo conectando API, frontend e banco
+Trilha de AWS;Introdução a Cloud, criando nossa conta e publicando um site na AWS via S3 e EC2;120;Entender fundamentos da nuvem e publicar sua primeira aplicação
+Trilha de AWS;Serviços de Armazenamento da Núvem com S3;120;Armazenar e gerenciar arquivos na AWS
+Trilha de AWS;Computação na Nuvem com EC2;120;Criar e administrar servidores virtuais na nuvem
+Trilha de AWS;Gestão de Acesso com IAM;120;Gerenciar permissões e acessos de usuários
+Trilha de AWS;Gerenciamento de Redes com VPC;120;Configurar redes privadas na AWS
+Trilha de AWS;Integrando EC2 e VPC;120;Integrar servidores e redes para ambientes mais seguros
+Trilha de AWS;Banco de dados com RDS;120;Criar e administrar bancos relacionais na AWS
+Trilha de AWS;Processamento de API e Armazenamento de dados;120;Processar dados com serviços de API
+Trilha de AWS;Arquitetura de Eventos;120;Usar eventos para acionar automações
+Trilha de AWS;Gestão de Custos na AWS;120;Monitorar e otimizar custos em nuvem
+Trilha de AWS;Lambda Functions;120;Criar funções serverless
+Trilha de AWS;Amazon CLI;120;Operar AWS pelo terminal
+Trilha de AWS;Amazon SQS;120;Trabalhar com filas de mensagens na nuvem
+Trilha de AWS;Amazon SNS;120;Gerenciar notificações e assinaturas de eventos
+Trilha de AWS;DynamoDB e Amplify;120;Trabalhar com bancos NoSQL e aplicações modernas
+Trilha de SQL e dbt-core;Instalação e Setup;120;Preparar ambiente para consultas SQL e dbt
+Trilha de SQL e dbt-core;Comandos de consulta Select, Where, GroupBy;120;Criar consultas e sumarizar dados
+Trilha de SQL e dbt-core;Joins;120;Relacionar tabelas em consultas
+Trilha de SQL e dbt-core;Window Function;120;Criar análises avançadas em SQL
+Trilha de SQL e dbt-core;Projeto Completo;120;Consolidar fundamentos em um case real
+Trilha de SQL e dbt-core;CTE, Subqueries, Views, Temporary Tables e Materialized Views;120;Organizar queries complexas
+Trilha de SQL e dbt-core;Criação de tabelas;120;Definir modelos relacionais em SQL
+Trilha de SQL e dbt-core;Stored Procedured;120;Programar lógica dentro do banco
+Trilha de SQL e dbt-core;Triggers e Functions;120;Programar lógica dentro do banco
+Trilha de SQL e dbt-core;Transações ACID;120;Garantir consistência e segurança em operações no banco
+Trilha de SQL e dbt-core;Perfomance e Tuning em SQL;120;Otimizar consultas e bancos grandes
+Trilha de SQL e dbt-core;B-Tree e Index;120;Otimizar consultas e buscas em tabelas grandes
+Trilha de SQL e dbt-core;Particionamento;120;Melhorar performance de queries em bases extensas
+Trilha de SQL e dbt-core;dbt cloud parte 1;120;Criar pipelines de transformação de dados com dbt
+Trilha de SQL e dbt-core;dbt cloud parte 2;120;Criar pipelines de transformação de dados com dbt
+Trilha de SQL e dbt-core;dbt core overview;120;Compreender os fundamentos do dbt core
+Trilha de SQL e dbt-core;ccriando nosso projeto;120;Configurar e iniciar um projeto dbt
+Trilha de SQL e dbt-core;dbt core testes;120;Aplicar testes em pipelines dbt
+Trilha de SQL e dbt-core;dbt core deplot;120;Publicar projetos dbt em ambiente produtivo
+Trilha de SQL e dbt-core;bigquery, macro e snapshots;120;Aplicar dbt em ambientes cloud modernos
+Trilha de Engenharia de Dados + IA;Infra, Linux e Docker;240;Montar base de infraestrutura para engenharia de dados
+Trilha de Engenharia de Dados + IA;Airflow Workflow Orchestration;240;Orquestrar pipelines de dados com Airflow
+Trilha de Engenharia de Dados + IA;Data Pipelines com Airflow 3.0 + dbt com Astro;240;Construir pipelines modernas com ferramentas integradas
+Trilha de Engenharia de Dados + IA;Web Scraping, Redis, MongoDB e noSQL;240;Extrair e manipular dados em escala com diferentes bancos
+Trilha de Engenharia de Dados + IA;Agentes de IA com Agno, CrewIA e Langchain;240;Criar agentes de IA avançados integrados a dados
+Trilha de Engenharia de Dados + IA;Extração de dados em PDF e Regex;240;Ler e transformar dados complexos de documentos
+Trilha de Engenharia de Dados + IA;Event-Driven com Amazon SQS e Lambda AWS;240;Criar pipelines orientados a eventos
+Trilha de Engenharia de Dados + IA;Arquitetura Streaming com Kafka;240;Processar dados em tempo real
+Trilha de Engenharia de Dados + IA;Observabilidade com Prothes, Sentry e OpenTelemetry;240;Monitorar pipelines com Prometheus, Sentry e OpenTelemetry
+Trilha de Engenharia de Dados + IA;Infra as Code com Terraform;240;Criar infraestrutura escalável e versionada
+Trilha de Engenharia de Dados + IA;Design Sprint para especificação de projetos;240;Aprender a especificar projetos de dados de ponta a ponta
+Trilha de Engenharia de Dados + IA;DevOps e Kubernetes para Dados;240;Aplicar práticas de DevOps em ambientes de dados
