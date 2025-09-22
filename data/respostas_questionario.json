@@ -1,0 +1,46 @@
+[
+  {
+    "timestamp": "2025-09-22T05:29:23.146786",
+    "respostas": {
+      "goal": "migrar_area",
+      "automation_exp": "avancado",
+      "sql_level": "avancado",
+      "etl_exp": "avancado",
+      "python_level": "avancado",
+      "de_exp": "avancado",
+      "cloud_exp": "avancado"
+    },
+    "trilhas_recomendadas": [
+      "python",
+      "engenharia_de_dados",
+      "aws"
+    ],
+    "trilhas_nomes": [
+      "Trilha de Python",
+      "Trilha de Engenharia de Dados + IA",
+      "Trilha de AWS"
+    ]
+  },
+  {
+    "timestamp": "2025-09-22T05:30:34.958570",
+    "respostas": {
+      "goal": "migrar_area",
+      "automation_exp": "avancado",
+      "sql_level": "avancado",
+      "etl_exp": "avancado",
+      "python_level": "avancado",
+      "de_exp": "avancado",
+      "cloud_exp": "avancado"
+    },
+    "trilhas_recomendadas": [
+      "python",
+      "engenharia_de_dados",
+      "aws"
+    ],
+    "trilhas_nomes": [
+      "Trilha de Python",
+      "Trilha de Engenharia de Dados + IA",
+      "Trilha de AWS"
+    ]
+  }
+]

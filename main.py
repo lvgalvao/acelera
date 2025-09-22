@@ -73,7 +73,7 @@ with col1:
     </div>
     """, unsafe_allow_html=True)
     
-    if st.button("📚 Ver Trilhas", type="secondary", width='stretch'):
+    if st.button("📚 Ver Trilhas", type="secondary"):
         st.switch_page("pages/1_📚_Trilhas.py")
 
 with col2:
@@ -94,7 +94,7 @@ with col2:
     </div>
     """, unsafe_allow_html=True)
     
-    if st.button("🎯 Fazer Questionário", type="primary", width='stretch'):
+    if st.button("🎯 Fazer Questionário", type="primary"):
         st.switch_page("pages/2_🎯_Questionário.py")
 
 st.markdown("---")

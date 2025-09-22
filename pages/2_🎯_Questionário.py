@@ -1,5 +1,13 @@
 import streamlit as st
 import pandas as pd
+import sys
+import os
+
+# Adicionar o diretório raiz ao path para importar módulos
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from database import QuestionarioRepository
+from config import setup_postgresql_credentials
 
 # Configuração da página
 st.set_page_config(
@@ -89,6 +97,8 @@ def load_cursos():
     except Exception:
         return None
 
+# Função removida - agora usamos QuestionarioRepository
+
 # Mapeamento das trilhas
 TRILHAS_MAP = {
     "n8n": "Trilha de I.A. com n8n",
@@ -177,6 +187,12 @@ def gerar_plano_estudos(trilhas_recomendadas, df_cursos):
     return pd.DataFrame(plano)
 
 def main():
+    # Configurar credenciais do PostgreSQL
+    setup_postgresql_credentials()
+    
+    # Inicializar repositório do questionário
+    questionario_repo = QuestionarioRepository()
+    
     # Carregar dados das trilhas e cursos
     df_trilhas = load_trilhas()
     df_cursos = load_cursos()
@@ -336,7 +352,7 @@ def main():
         
         if submitted:
             # Salvar respostas
-            st.session_state.respostas = {
+            respostas_dict = {
                 "goal": objetivo,
                 "automation_exp": automacao,
                 "sql_level": sql,
@@ -345,6 +361,18 @@ def main():
                 "de_exp": de,
                 "cloud_exp": cloud
             }
+            
+            st.session_state.respostas = respostas_dict
+            
+            # Calcular trilhas recomendadas
+            trilhas_recomendadas = calcular_trilha_recomendada(respostas_dict)
+            trilhas_nomes = [TRILHAS_MAP[trilha] for trilha in trilhas_recomendadas]
+            st.session_state.trilhas_recomendadas = trilhas_recomendadas
+            
+            # Salvar respostas no Supabase
+            if questionario_repo.salvar_resposta(respostas_dict, trilhas_recomendadas, trilhas_nomes):
+                st.success("✅ Respostas salvas com sucesso no banco de dados!")
+            
             st.session_state.mostrar_resultado = True
             st.rerun()
     
@@ -353,8 +381,11 @@ def main():
         st.markdown("---")
         st.markdown("## 🎯 Sua Trilha Recomendada")
         
-        # Calcular trilha recomendada
-        trilhas_recomendadas = calcular_trilha_recomendada(st.session_state.respostas)
+        # Usar trilhas já calculadas ou calcular novamente se necessário
+        if 'trilhas_recomendadas' not in st.session_state:
+            trilhas_recomendadas = calcular_trilha_recomendada(st.session_state.respostas)
+        else:
+            trilhas_recomendadas = st.session_state.trilhas_recomendadas
         
         if trilhas_recomendadas:
             st.success("**Com base nas suas respostas, te recomendamos seguir por essas 3 trilhas nos próximos 3 meses:**")
@@ -437,7 +468,6 @@ def main():
                         st.markdown("**📚 Módulos da Trilha:**")
                         st.dataframe(
                             modulos_trilha[['Módulo', 'Carga Horária (h)', 'Dias Necessários', 'Objetivo']],
-                            width='stretch',
                             height=300
                         )
                         
@@ -473,7 +503,31 @@ def main():
         if st.button("🔄 Refazer Questionário"):
             st.session_state.mostrar_resultado = False
             st.session_state.respostas = {}
+            if 'trilhas_recomendadas' in st.session_state:
+                del st.session_state.trilhas_recomendadas
             st.rerun()
+    
+    # Mostrar estatísticas do banco de dados
+    if questionario_repo.postgres_client.is_connected():
+        st.markdown("---")
+        st.markdown("### 📊 Estatísticas do Banco de Dados")
+        
+        total_respostas = questionario_repo.contar_respostas()
+        
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            st.metric("📝 Total de Respostas", total_respostas)
+        
+        with col2:
+            if total_respostas > 0:
+                st.metric("✅ Status", "Conectado")
+            else:
+                st.metric("⚠️ Status", "Sem dados")
+        
+        with col3:
+            if st.button("🔄 Atualizar Estatísticas"):
+                st.rerun()
 
 if __name__ == "__main__":
     main()
