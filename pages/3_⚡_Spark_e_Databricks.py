@@ -117,10 +117,10 @@ def main():
     # Informações gerais da trilha
     st.markdown("## 📊 Visão Geral da Trilha")
     
-    # Calcular estatísticas (convertendo minutos para horas)
+    # Estatísticas (hardcoded conforme solicitado)
     total_modulos = len(df_databricks)
-    total_horas = df_databricks['carga_horaria'].sum() / 60.0
-    total_dias = total_horas / 2  # Considerando 2 horas por dia
+    total_horas = 60.0
+    total_dias = 60.0
     
     col1, col2, col3, col4 = st.columns(4)
     
@@ -162,11 +162,10 @@ def main():
     # Tabela dos módulos
     st.markdown("### 📚 Módulos da Trilha")
     
-    # Preparar dataframe para exibição
+    # Preparar dataframe para exibição (removendo 'Dias Necessários')
     df_display = pd.DataFrame({
         'Módulo': df_filtrado['conteudo'],
         'Carga Horária (h)': df_filtrado['carga_horaria'] / 60.0,
-        'Dias Necessários': (df_filtrado['carga_horaria'] / 60.0 / 2.0).round(1),
         'Objetivo': df_filtrado['objetivo'],
         'Certificação': df_filtrado['certificacao'],
     })
