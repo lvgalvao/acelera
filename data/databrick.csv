@@ -1,0 +1,25 @@
+Trilha;Conteúdo;Carga Horária;Objetivo;Certificação
+Trilha de Spark e Databricks;Introdução ao Databricks e ao Lakehouse;90;Compreender a visão geral da plataforma e o conceito de Lakehouse.;Associate ✅
+Trilha de Spark e Databricks;Arquitetura de Dados Moderna;90;Diferenciar Data Lake, Data Warehouse e Lakehouse.;Associate ✅
+Trilha de Spark e Databricks;Configuração do Workspace Databricks;90;Aprender a criar clusters, gerenciar usuários e permissões.;Associate ✅
+Trilha de Spark e Databricks;Primeiro Notebook no Databricks;90;Executar PySpark e SQL, integrando notebooks com Git.;Associate ✅
+Trilha de Spark e Databricks;Fundamentos do Spark e PySpark;90;Entender RDDs, DataFrames e paralelismo.;Associate ✅
+Trilha de Spark e Databricks;Transformações e Ações no Spark;90;Praticar operações como filter, map, groupBy e join.;Associate ✅
+Trilha de Spark e Databricks;Leitura e Escrita de Dados;90;Carregar e salvar dados em CSV, JSON, Parquet e Delta Lake.;Associate ✅
+Trilha de Spark e Databricks;SQL no Databricks;90;Utilizar queries SQL, views e otimizações básicas.;Associate ✅
+Trilha de Spark e Databricks;Ingestão de Dados Batch;90;Integrar dados de APIs, bancos relacionais e arquivos externos.;Associate ✅
+Trilha de Spark e Databricks;Camadas Bronze, Silver e Gold;90;Implementar pipelines estruturadas no modelo de camadas.;Associate ✅
+Trilha de Spark e Databricks;Qualidade e Governança de Dados;90;Aplicar schema enforcement e data quality checks.;Associate ✅
+Trilha de Spark e Databricks;Delta Lake Avançado;90;Explorar ACID transactions, time travel e otimizações.;Professional ⭐
+Trilha de Spark e Databricks;Conceitos de Streaming no Spark;90;Entender microbatch vs continuous e arquitetura de streaming.;Associate ✅
+Trilha de Spark e Databricks;Structured Streaming com PySpark;90;Ler dados de Kafka e sockets em tempo real.;Professional ⭐
+Trilha de Spark e Databricks;Transformações e Janelas em Streaming;90;Realizar agregações e aplicar watermarks em fluxos.;Professional ⭐
+Trilha de Spark e Databricks;Integração com Dashboards em Tempo Real;90;Conectar dados em streaming ao Power BI e Databricks SQL.;Associate ✅
+Trilha de Spark e Databricks;Orquestração com Databricks Workflows;90;Configurar jobs, triggers e dependências.;Professional ⭐
+Trilha de Spark e Databricks;Integração com dbt-core e SQL;90;Criar modelos versionados e documentados.;Professional ⭐
+Trilha de Spark e Databricks;Infraestrutura como Código no Databricks;90;Automatizar clusters e permissões com Terraform.;Professional ⭐
+Trilha de Spark e Databricks;Projeto Batch + Streaming;90;Construir pipeline real unindo ingestão batch e streaming.;Professional ⭐
+Trilha de Spark e Databricks;Otimização de Jobs Spark;90;Aplicar técnicas de particionamento, caching e adaptive execution.;Professional ⭐
+Trilha de Spark e Databricks;Segurança e Governança com Unity Catalog;90;Configurar permissões, lineage e auditoria.;Professional ⭐
+Trilha de Spark e Databricks;Preparação para Certificação Databricks;90;Revisar conteúdo oficial e realizar simulados.;Professional ⭐
+Trilha de Spark e Databricks;Projeto Final End-to-End;90;Desenvolver pipeline completo com batch, streaming, dashboards e governança.;Professional ⭐

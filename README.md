@@ -35,6 +35,7 @@
 - **Python** - Programação para dados
 - **Engenharia de Dados + IA** - Pipelines e infraestrutura
 - **AWS** - Cloud computing
+- **⚡ Spark & Databricks** - Plataforma de dados moderna
 
 ## 🎯 **Perfis Atendidos:**
 - 👨‍💼 **Profissional migrando para a área**
@@ -55,12 +56,21 @@ cd acelera
 pip install -r requirements.txt
 ```
 
-2. **Execute:**
+2. **Configure o banco de dados (opcional):**
+```bash
+# Copie o arquivo de exemplo
+cp env_example.txt .env
+# Edite o arquivo .env com suas credenciais do Supabase
+```
+
+3. **Execute:**
 ```bash
 streamlit run main.py
 ```
 
-3. **Acesse:** `http://localhost:8501`
+4. **Acesse:** `http://localhost:8501`
+
+> **💡 Dica:** Se você quiser salvar as respostas do questionário no banco de dados, configure o arquivo `.env` com suas credenciais do Supabase. Veja o guia completo em `POSTGRESQL_SETUP.md`.
 
 ---
 

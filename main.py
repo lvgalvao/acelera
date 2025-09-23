@@ -56,7 +56,7 @@ st.markdown("---")
 # Opções de navegação
 st.subheader("🎯 Escolha uma opção:")
 
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("""
@@ -96,6 +96,26 @@ with col2:
     
     if st.button("🎯 Fazer Questionário", type="primary"):
         st.switch_page("pages/2_🎯_Questionário.py")
+
+with col3:
+    st.markdown("""
+    <div style="
+        background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%);
+        padding: 30px;
+        border-radius: 15px;
+        border: 3px solid #28a745;
+        text-align: center;
+        margin: 10px 0;
+        box-shadow: 0 8px 25px rgba(40, 167, 69, 0.2);
+    ">
+        <h3 style="color: #28a745; margin-top: 0; font-size: 1.4rem; font-weight: bold;">⚡ Spark & Databricks</h3>
+        <p style="font-size: 1rem; font-weight: 500;">Explore a trilha completa de Spark e Databricks.</p>
+        <p style="color: #28a745; font-weight: bold; margin-top: 10px;">🔥 Plataforma moderna</p>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    if st.button("⚡ Ver Spark & Databricks", type="secondary"):
+        st.switch_page("pages/3_⚡_Spark_e_Databricks.py")
 
 st.markdown("---")
 
