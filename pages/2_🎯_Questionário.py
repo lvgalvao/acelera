@@ -197,10 +197,6 @@ def main():
     df_trilhas = load_trilhas()
     df_cursos = load_cursos()
     
-    if df_trilhas is None or df_cursos is None:
-        st.error("Erro ao carregar dados das trilhas ou cursos.")
-        return
-    
     # Inicializar session state
     if 'respostas' not in st.session_state:
         st.session_state.respostas = {}
