@@ -37,6 +37,38 @@
 - **AWS** - Cloud computing
 - **⚡ Spark & Databricks** - Plataforma de dados moderna
 
+## 🎯 **Desafios Técnicos das Trilhas:**
+
+### 🐍 **Python**
+- [Desafio 01: Validação de Dados e Cálculo de Bônus](desafios/python/desafio_01.md)
+  - Validação de dados de funcionários
+  - Cálculo de bônus com regras específicas
+  - Geração de relatórios em CSV e JSON
+
+### 🗄️ **SQL**
+- [Desafio 01: Funções de Ranking (ROW_NUMBER, RANK e DENSE_RANK)](desafios/sql/desafio_01.md)
+  - Análise de atividade de e-mails
+  - Comparação entre funções de ranking
+  - Problema clássico de entrevistas técnicas
+
+### ☁️ **AWS**
+- [Desafio 01: Streamlit no EC2 com Kaggle + S3](desafios/aws/desafio_01.md)
+  - Dashboard Streamlit em instância EC2
+  - Integração com datasets do Kaggle
+  - Armazenamento e leitura de dados no S3
+
+### 🔧 **Engenharia de Dados**
+- [Desafio 01: Docker + Airflow (ETL Bitcoin)](desafios/engenharia/desafio_01.md)
+  - Pipeline ETL com Airflow em Docker
+  - Coleta de dados da API Coinbase
+  - Agendamento e persistência de dados
+
+### 🤖 **n8n**
+- [Desafio 01: Agente Financeiro (Telegram + Google Sheets + ChatGPT)](desafios/n8n/desafio_01.md)
+  - Bot Telegram para controle financeiro
+  - Integração com Google Sheets
+  - Classificação automática de intenções com IA
+
 ## 🎯 **Perfis Atendidos:**
 - 👨‍💼 **Profissional migrando para a área**
 - 📊 **Analista migrando para engenharia**
