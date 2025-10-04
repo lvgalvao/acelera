@@ -74,6 +74,13 @@
 - 📊 **Analista migrando para engenharia**
 - 🚀 **Engenheiro se especializando**
 
+---
+
+## 🆕 **Novo módulo: Dashboard de Progresso**
+
+Agora ficou ainda mais fácil acompanhar seus estudos!  
+O novo módulo permite que você faça login, marque suas aulas concluídas e veja seu progresso em tempo real, com métricas, trilhas e animações de celebração a cada conquista. Assim, você acompanha sua evolução e se mantém motivado durante toda a jornada! 🚀
+
 ## 🛠️ **Como usar:**
 
 ### 🌐 **Opção 1 - Acesse diretamente (Recomendado):**
